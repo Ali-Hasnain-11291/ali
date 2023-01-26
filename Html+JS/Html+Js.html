@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html+JS</title>
+</head>
+<body>
+    <h1>HTML conection with JS</h1>
+    <form onsubmit="abc(); returnfalse;"> 
+        <lable for="Put the number">Put number</lable>
+        <input type="number" id="any number" placeholder="Enter the number here">
+        <button type="submit">Check</button>    
+    </form>
+    <h1 id="res">The Result will bs shown here:</h1>
+
+    <script>
+    function abc(){
+        let Number= document.querySelector("#any number").value;
+        let result= Number
+        document.querySelector("#res").innerHTML="The number is" + result;
+    }
+    </script>
+   
+   
+    
+</body>
+</html>
