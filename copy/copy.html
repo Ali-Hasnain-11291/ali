@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copy-Paste</title>
+</head>
+<body>
+    <h1>Connection of Html with JS</h1>
+    <form onsubmit="calc(); return false;">
+        <lable for="total marks">Total Marks</lable>
+        <input type="number" id="tm" placeholder="Put your tm">
+        <lable for="obtained marks">Obtained marks</lable>
+        <input type="number" id="om" placeholder="Put your om">
+        <button type="submit">click</button>     
+    </form>
+    <!-- <button onclick="Ali()">alert</button> -->
+    <!-- <h1 id="result"> Your Obtained percentage will shown here:   </h1> -->
+
+    <script>
+        function calc(){
+            let studentTotal_Marks= document.querySelector("#tm").value;
+            let studentObtain_Marks= document.querySelector("#om").value;
+            let resultOf_Student = studentObtain_Marks/sudentTotal_Marks * 100;
+            document.write("Your percentage is" +  + resultOf_Student "%" )
+            // document.querySelector("#result").innerHTML = "your Obtained percentage is" + res;
+        }
+          
+        
+        
+        function Ali(){
+            alert("Hi Ali");
+        }
+    </script>
+    
+</body>
+</html>
